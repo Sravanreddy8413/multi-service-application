@@ -1,0 +1,10 @@
+FROM node:18-alpine
+
+# Set working directory for app dependencies
+WORKDIR /usr/src/app
+
+# Install global tools if needed
+RUN npm install -g nodemon
+
+# Set environment variable
+ENV NODE_ENV=production
